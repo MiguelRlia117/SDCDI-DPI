@@ -1,0 +1,182 @@
+<!--About us web page-->
+<!--Miguel R-->
+<!--26052021-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Registro</title>
+
+        <!-------Incorporación de Bootstrap------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!------Estilos externos vinculados------->
+        <link href="../styles/nav.css" type="text/css" rel="stylesheet">
+        <link href="../styles/fotter.css" type="text/css" rel="stylesheet">
+        <link href="../styles/forms.css" type="text/css" rel="stylesheet">
+        <!------Estilos internos------->
+        <style>
+            .main{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 17px;
+                line-height: 1.3em;
+                margin-bottom: 1.6em;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .main header h1{
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            .main h2,.main h3{
+                padding-top:2rem;
+                padding-bottom: 2rem;
+            }
+        </style>
+
+    </head>
+
+    <body background="/img/bodyback.jpg">
+
+            <!--Barra de navegación para el sitio web-->
+            <span id="inicio"class></span>
+            <div class="navbar">
+
+                <nav class="navbar navbar-light bg-light">
+    
+                    <div class="container-fluid">
+    
+                        <a class="navbar-brand" href="../index.html" style="letter-spacing: 4.5px;color:#1E4258;"><!--logotipo del sitio web-->
+                            <img src="../img/logo_transparent.png" width="45" height="45" class="d-inline-block align-text-top" title="Pagina principal">
+                            <p style="display: inline-block;">Dv Workshop® </p>
+                        </a>
+    
+                        <span class="idmen"><img src="../img/menu.png" height="35px"></span><!--Para menu con pantallas mas pequeñas-->
+    
+                        <div class="bar">
+                            <div><!--Lista de enlaces en la barra de navegación-->
+                                <a class="navlink" id="home" href="../index.html" title="Haz clic aquí">Home</a>
+                                <a class="navlink" href="hmtl-css.html" title="Haz clic aquí">Html & CSS</a>
+                                <a class="navlink" href="js.html" title="Haz clic aquí">JavaScript</a>
+                                <a class="navlink" href="bep.html" title="Haz clic aquí">Back-end con PHP</a>
+                                <a class="navlink" href="questions.html" title="Haz clic aquí">Q&A</a>
+                                <a class="navlink" id="rgt" href="regist.html" title="Haz clic aquí">Registrate</a>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </nav>
+    
+            </div>
+        
+        <main class="main" style="padding-top: 7rem;background-color: #fff;"> <!--Clase principal del la pagina web-->
+
+            <header><!--Cabecera principal-->
+                <br><br>
+                <h1 align="center">Pre-registrate a nuestros cursos</h1>
+            </header>
+
+            <section class="register"><!--Sección de registro-->
+
+                <section class="important"><!--Sección de texto-->
+
+                    <div id="div1"><!--Texto-->
+                        <h2><i>¡Tenemos una gran noticia para ti!</i></h1>
+                            <h3>¿Quieres saber aun mas sobre la carrera de informática administrativa y de la
+                            Universidad autonóma del estado de México?</h3>
+                            <p> 
+                                Si te quedaste con ganas de aprender mas sobre la universidad autonóma del estado de México y la gran carrera de Licenciatura
+                                en informatica adminstrativa, ahora puedes seguir apendiendo!!
+                            </p>
+                            <p>
+                                Solo llena el siguiente formulario con algunos datos basicos y tu correo electronico para suscribirte a nuestro Newsletter
+                                así tendras acceso y notificación a nuestras ultimas notas sobre la uaemex, la facultad de contaduria y admnistración, y la licenciatura en informatica adminstrativa
+                                todo esto de la manera mas rapida y facil: 
+                            </p>
+                    </div>
+
+                    <div id="div2"><!--Imagen-->
+                        <img src="../img/registro.png" width="250px" alt="Registro_img">
+                    </div>
+
+                </section><!--Fin de la sección importante-->
+
+                <section class="form"><!--Sección del formulario de registro-->
+                    <form>
+                        <h1 align="center">Registro</h1>
+                        <ul>
+                            <li><!--Ingresar nombre-->
+                                <label style="padding-top:2rem;">Nombre(s)</label>
+                                <input type="text" autofocus  required="true">
+                            </li>
+                            <li><!--Ingresar apelido-->
+                                <label>Apellidos</label>
+                                <input type="text">
+                            </li>
+                            <li><!--Ingresar correo electronico-->
+                                <label for="mail">Correo electronico</label>
+                                <input type="email"  required="true">
+                            </li>
+                            <li><!--Preferencias-->
+                                <label>¿Qué tipo de articulos deseas recibir?</label><br>
+                                <select></select>
+                            </li>
+                            <li><!--Recomendaciones-->
+                                <label for="msg">Recomendaciones</label>
+                                <textarea id="msg">Recomendaciones para mejorar nuestro sitio web.</textarea>
+                            </li>
+                            <li><!--Frecuencia-->
+                                <label>¿Cual es la frecuencia con la que quieres oir de nosostros?</label>
+                                <input type="range" id="rango" min="0" max="100">
+                            </li>
+                            <li><!--Terminos y condiciones-->
+                                <label for="check">Aceptar terminos y condiciones</label>
+                                <input  class="rqd"type="checkbox" required="true">
+                            </li><!--Boton de registro-->
+                            <li style="padding-top: 2rem;">
+                                <button type="submit" class="terminado">Registrarse</button>
+                            </li>
+                        </ul>
+                    </form><!--Fin del formurario-->
+
+                </section><!--Fin del a clase formulario-->
+
+            </section><!--Fin de la sección de registro-->
+
+            <div style="padding-top: 15rem;" align="right"> <!--Control de parte superior y pagina principal-->
+                <a href="#inicio"title="Parte superior">
+                    <img src="/img/uparrow.png" height="60" width="60">
+                </a>
+    
+                <a href="../index.html" target="_self" title="Página principal" style="float: left;">
+                    <img src="../img/home-icon.png" height="40" width="40">
+                </a>
+            </div>
+    
+        </main><!--Fin de main--> 
+
+        <footer class="fot">
+            <span style="letter-spacing: 5px;"><i>Miguel Romero, Junio 2021®</i></span>
+
+            <div class="profile">
+                <ul>
+                    Miguel Romero SW-DEV®
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook-icon.png" width="25px" title="Facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter-icon.png" width="25px" title="Twitter">Twitter</a></li>
+                    <li><a href="https://discord.gg/8uMTNAGq" target="_blank"><img src="../img/discord.png" width="25px" title="Discord">Discord</a></li>
+                </ul>
+            </div>
+
+            <img src="../img/logo_transparent.png" style="width: 150px; float: right;padding-right: 2rem;">
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!--Para llamar a Jquery-->
+        <script src="/javascript/detach_menu.js"></script><!--Para script de la barra de navegación-->
+    </body>
+
+</html>

@@ -1,0 +1,157 @@
+<!--Realizado por Miguel Isai Romero Rios e Ivan Kin Fernandez Lopez-->
+<!--052022-->
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Lineas</title>
+        <meta name="description" content="Registro de lineas de productos para llevar un mejor control de los inventarios"/>
+        <meta name="author" content="Miguel Romero"/>
+        <meta name="keywords" content="lineas, productos, inventarios, mobo"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Etiqueta para que el navegador no redusca el tamaño de contenido en pantallas mas pequeñas-->
+
+        <!-------Incorporación de Bootstrap------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!------Estilos externos vinculados------->
+        <link href="../styles/nav.css" type="text/css" rel="stylesheet">
+        <link href="../styles/fotter.css" type="text/css" rel="stylesheet">
+        <link href="../styles/home.css" type="text/css" rel="stylesheet">
+        <link href="../styles/registros.css" type="text/css" rel="stylesheet">
+        <!------Estilos internos------->
+        <style>
+            .main{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 17px;
+                line-height: 1.2em;
+                margin-bottom: 1.6em;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            p{
+                margin-bottom: 1.6em;
+                width: 80%;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+
+    <body background="/img/bodyback.jpg" style="margin: 0;">
+
+        <!--Barra de navegación para el sitio web-->
+        <span id="inicio"class></span>
+        <div class="navbar">
+
+            <nav class="navbar navbar-light bg-light">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="../index.html" style="letter-spacing: 4.5px;color:#1E4258;"><!--logotipo del sitio web-->
+                        <img src="../img/logo-mobo.jpg" width="95" height="40" class="d-inline-block align-text-top" title="Pagina principal">
+                        <p style="display: inline-block;">Lineas</p>
+                    </a>
+
+                    <span class="idmen"><img src="../img/menu.png" height="35px"></span><!--Para menu con pantallas mas pequeñas-->
+
+                    <div class="bar">
+                        <div><!--Lista de enlaces en la barra de navegación-->
+                            <a class="navlink" id="home" href="../index.html" title="Haz clic aquí">Inicio</a>
+                            <a class="navlink" href="ventas.html" title="Haz clic aquí">Ventas</a>
+                            <a class="navlink" href="compras.html" title="Haz clic aquí">Compras</a>
+                            <a class="navlink" href="productos.html" title="Haz clic aquí">Productos</a>
+                            <a class="navlink" href="lineas.html" title="Haz clic aquí">lineas de productos</a>
+                            <a class="navlink" id="rgt" href="clientes.html" title="Haz clic aquí">Clientes</a>
+                            <a class="navlink" id="rgt" href="proveedores.html" title="Haz clic aquí">Proveedores</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <main class="main" style="padding-top: 1rem;background-color: #F8F9FA;"> <!--Clase principal del la pagina web-->
+
+            <header class="head" id="b05"><!--Cabecera principal-->
+
+                <div class="titles" align="center">
+                    <h1>Lineas de productos</h1>
+                    <h2>Registra un nuevo tipo de linea de producto en la BD📱💻🔌</h2>
+                </div>
+
+                <div class="img" style="padding-left: 6rem;padding-top: .1rem;">
+                    <img src="../img/linea.png" align="center">
+                </div>
+
+            </header>
+
+            <h1 style="text-align: center;padding-top: 10rem;">Lineas de productos</h1>
+            <p style="font-style:italic;">Registra las lineas de productos mas comunes de las cosas en el almacen </p>
+
+            <div class="container">
+                <div class="row-md-6" id="line">
+                    <section class="form">
+                        <form class="form01" id="line-form">
+                            <h1 align="center">Datos de la linea</h1>
+                            <ul>
+                                <li>
+                                    <label style="padding-top:.5rem;">Nombre*</label>
+                                    <input type="text" id="lna" name="lna"  autofocus required="true" placeholder="Nombre de la linea">
+                                </li>
+                                <li>
+                                    <label style="padding-top:.5rem;">Decripción*</label>
+                                    <textarea id="lde" name="lde" placeholder="Caracteristicas de la linea de productos"></textarea>
+                                </li>
+                                <li style="padding-top: 1rem;">
+                                    <p style="float: left;">*Campos obligatorios</p>
+                                </li>
+                                <li style="padding-top: 2rem;">
+                                    <input type="submit" class="terminado" value="Guardar">
+                                </li>
+                            </ul>
+                        </form>
+                        <div  id="linelist" style="padding-top: 5rem;"></div>
+                    </section>
+                </div>
+            </div>
+
+            <div style="padding-top: 15rem;" align="right"> <!--Control de parte superior y pagina principal-->
+                <a href="#inicio"title="Parte superior">
+                    <img src="/img/uparrow.png" height="60" width="60">
+                </a>
+    
+                <a href="../index.html" target="_self" title="Página principal" style="float: left;">
+                    <img src="../img/home-icon.png" height="50" width="50">
+                </a>
+            </div>
+            
+        </main>
+
+        <footer class="fot">
+            <span style="letter-spacing: 5px;"><i>AppStar Division®, Mayo 2022</i></span>
+
+            <div class="profile">
+                <ul>
+                    MOBO original accesories®
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><img src="/img/facebook-icon.png" width="25px" title="Facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="/img/twitter-icon.png" width="25px" title="Twitter">Twitter</a></li>
+                    <li><a href="https://discord.gg/8uMTNAGq" target="_blank"><img src="/img/discord.png" width="25px" title="Discord">Discord</a></li>
+                </ul>
+            </div>
+
+            <img src="/img/logo-appstar.png" style="width: 200px; float: right;padding-right: 4rem;padding-top:4rem;">
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!--Para llamar a Jquery-->
+        <script src="/javascript/detach_menu.js"></script><!--Para script de la barra de navegación-->
+        <script src="/javascript/lines.js"></script>
+    </body>
+
+</html>

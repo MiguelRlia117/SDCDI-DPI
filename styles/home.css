@@ -1,0 +1,98 @@
+.head{
+    height: 350px;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+    color: #000000;
+    text-decoration: wavy;
+}
+
+.head#b01{
+    background-image: url("/img/head-background.jpg");
+}
+
+.head#b02{
+    background-image: url("/img/back01.jpg");
+}
+
+.head#b03{
+    background-image: url("/img/back02.jpg");
+}
+
+.head#b04{
+    background-image: url("/img/back03.jpg");
+    color: #000000;
+}
+
+.head#b05{
+    background-image: url("/img/back04.jpg");
+}
+
+.head#b06{
+    background-image: url("/img/back05.jpg");
+}
+
+.head#b07{
+    background-image: url("/img/back06.jpg");
+}
+
+.head#b04 img{
+    padding-top: 3rem;
+}
+
+.titles{
+    padding-top: 0.5rem;
+    display: block;
+    width: 50%;
+    height: 65%;
+    float: right;
+    background-color:  #69b1db;
+}
+
+div.titles h1::first-letter{
+    background-color: #ffffff;
+}
+
+.img{
+    padding-top: 2rem;
+    padding-left: 5rem;
+    width: 50%;
+}
+
+.img img{
+    width: 250px;
+}
+
+img#c01{
+    height: 650px;
+}
+
+.carrusel-color div{
+    color: black;
+}
+
+ul.mmenu{
+    list-style: none;
+}
+
+ul.mmenu li{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+ul.mmenu a{
+    text-decoration:none;
+    color: #0C85C5;
+}
+
+ul.mmenu img{
+    width:50px;
+}
+
+
+@media  only screen and (max-width:1344px) {    /*Media tag para cambiar el estilo del carrusel de imagenes en un tamaño de pantalla a partir de los 1344px*/
+
+    img#c01{
+        height: 450px;
+    }
+
+}

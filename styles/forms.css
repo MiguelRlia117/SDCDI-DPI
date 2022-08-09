@@ -1,0 +1,129 @@
+/*Hoja de estilo para darle un formato al formulario de registro*/
+
+/***Cuadro de texto con información sobre el formulario***/
+section.important{
+  padding: 2rem;
+  background: #CCC;
+  display:inline-block;
+  align-items: center;
+  width: 100%;
+}
+
+section.important div#div1{
+  text-align: left;
+  width:70%;
+  display: inline-block;
+}
+
+div#div1 p{
+  width: 80%;
+  max-width: 800px;
+  text-align: justify;
+  padding-left: 3rem;
+}
+
+section.important div#div2{
+  display: inline;
+  float: right;
+  padding: 5rem;
+}
+/***Estilos para cambiar el  formulario y su posicionamiento***/
+.form{
+  padding-top: 4rem;
+  padding-left: 2rem;
+  align-items: center;
+  width:100%;
+}
+form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 3rem;
+    border: 3px solid #CCC;
+    background-image:url(https://i.pinimg.com/originals/fc/fd/1b/fcfd1bcaf96773b4d442bc204f6f65db.jpg) ;/*Imagen de fondo del formulario sacada de otra pagina web*/
+  }
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1.5rem;
+}
+
+form label+input,form label+textarea{
+  margin-top: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 350px;
+  text-align: left;
+}
+
+input,textarea {
+  width: 300px;
+  box-sizing: border-box;
+  border: 2px solid #999;
+}
+
+input:focus,textarea:focus {
+  border-color: rgb(173, 122, 11);
+}
+
+  textarea {
+    height: 10rem;
+  }
+
+input.rqd{
+  width: 10%;
+}
+
+.terminado{
+  width: 100%;
+  padding: 1rem;
+  float:center;
+  border: 3px solid rgb(48, 1, 54);
+  border-radius: 1rem;
+}
+
+/***Media tag para cambiar el estilo de pagina en un tamaño de pantalla a partir de los 1344px***/
+@media  only screen and (max-width:1344px) {
+
+  section.important{
+    padding: 2rem;
+    background:#CCC;
+    display:inline-block;
+    align-items: center;
+    width: 100%;
+  }
+  
+  section.important div#div1{
+    text-align: left;
+    width:100%;
+    display: block;
+  }
+  
+  div#div1 p{
+    width: 90%;
+    max-width: 900px;
+    text-align: justify;
+    padding-left: 3rem;
+  }
+  
+  section.important div#div2{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  div#div2 img{
+    width: 200px;
+  }
+
+}

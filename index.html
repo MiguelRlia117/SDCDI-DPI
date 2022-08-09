@@ -1,0 +1,269 @@
+<!--sistema de control de inventarios basado en la web, desarrollado para MOBO-->
+<!--Realizado por Miguel Isai Romero Rios e Ivan Kin Fernandez Lopez-->
+<!--052022-->
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>MOBO SCI</title>
+        <meta name="description" content="Sistma de control de inventarios de la tienda de accesorios MOBO"/>
+        <meta name="author" content="Miguel Romero"/>
+        <meta name="keywords" content="Accesorios, sistema, inventarios, control, ventas, compras, proveedores"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Etiqueta para que el navegador no redusca el tamaño de contenido en pantallas mas pequeñas-->
+
+        <!-------Incorporación de Bootstrap------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!------Estilos externos vinculados------->
+        <link href="styles/nav.css" type="text/css" rel="stylesheet">
+        <link href="styles/fotter.css" type="text/css" rel="stylesheet">
+        <link href="styles/home.css" type="text/css" rel="stylesheet">
+        <!------Estilos internos------->
+        <style>
+            .main{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 17px;
+                line-height: 1.2em;
+                margin-bottom: 1.6em;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            p{
+                margin-bottom: 1.6em;
+                width: 80%;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .img{
+                padding-top: 2rem;
+                padding-left: 5rem;
+                width: 50%;
+            }
+
+            .img img{
+                width: 250px;
+            }
+        </style>
+    </head>
+
+
+    <body background="img/bodyback.jpg" style="margin: 0;">
+
+        <span id="inicio"class></span>
+        <!--Barra de navegación para el sitio web-->
+        
+        <div class="navbar">
+
+            <nav class="navbar navbar-light bg-light">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="index.html" style="letter-spacing: 4px;color:#035785;"><!--logotipo del sitio web-->
+                        <img src="../img/logo-mobo.jpg" width="95" height="40" class="d-inline-block align-text-top" title="Pantalla principal">
+                        <p style="display: inline-block;">Inventarios</p>
+                    </a>
+
+                    <span class="idmen"><img src="img/menu.png" height="35px"></span><!--Para menu con pantallas mas pequeñas-->
+
+                    <div class="bar">
+                        <div><!--Lista de enlaces en la barra de navegación-->
+                            <a class="navlink" id="home" href="index.html" title="Haz clic aquí">Inicio</a>
+                            <a class="navlink" href="docs/ventas.html" title="Haz clic aquí">Ventas</a>
+                            <a class="navlink" href="docs/compras.html" title="Haz clic aquí">Compras</a>
+                            <a class="navlink" href="docs/productos.html" title="Haz clic aquí">Productos</a>
+                            <a class="navlink" href="docs/lineas.html" title="Haz clic aquí">Lineas de productos</a>
+                            <a class="navlink" href="docs/clientes.html" title="Haz clic aquí">Clientes</a>
+                            <a class="navlink"  href="docs/proveedores.html" title="Haz clic aquí">Proveedores</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div><!----Fin de la barra de navegación----->
+
+        <main class="main" style="padding-top: 1rem;background-color:#F8F9FA;"> <!--Clase principal del la pagina web-->
+
+            <header class="head" id="b01"><!--Cabecera principal-->
+
+                <div class="titles" align="center">
+                    <h1>MOBO original accesories</h1>
+                    <h2>Sistema de control de inventarios</h2>
+                    <h3>Empieza a registrar todos los movimientos del día a día🧐</h3>
+                </div>
+
+                <div class="img" style="padding-top: 7rem;padding-left: 6rem;">
+                    <img src="img/logo-mobo.jpg" align="center">
+                </div>
+
+            </header>
+            
+        <!--Carrusel de imagenes incorporado con Bootstrap 5-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators"><!--Indicadores del carrusel-->
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" id="b01"><!--Primer elemento del carrusel de imagenes-->
+                        <a href="/docs/ventas.html" target="_self"> 
+                            <img src="img/ventas-banner.jpg" class="d-block w-100" id="c01" alt="imgventas">
+                        </a>
+                        <div class="carrusel-color">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ventas</h5>
+                                <p>Registra una venta de productos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!--Elemento 2 del carrusel-->
+                        <a href="/docs/compras.html" target="_self">
+                            <img src="img/compras-banner.jpg" class="d-block w-100" id="c01" alt="img2">
+                        </a>
+                        <div class="carrusel-color">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Compras</h5>
+                                <p>Registra la compra de nuevos productos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!--Elemento 3 del carrusel-->
+                        <a href="/docs/lineas.html" target="_self">
+                            <img src="img/lineas-banner02.jpg" class="d-block w-100" id="c01" alt="img3">
+                        </a>
+
+                        <div class="carrusel-color">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Lineas de productos</h5>
+                                <p>Registra una nueva linea de productos</p>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!--Elemento 4 del carrusel-->
+                        <a href="/docs/productos.html" target="_self">
+                            <img src="img/productos-banner.jpg" class="d-block w-100" id="c01" alt="img3">
+                        </a>
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Productos</h5>
+                            <p>Registra nuevos productos en el almacen</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!--Elemento 5 del carrusel-->
+                        <a href="/docs/clientes.html" target="_self">
+                            <img src="img/clientes-banner.jpg" class="d-block w-100" id="c01" alt="img3">
+                        </a>
+
+                        <div class="carrusel-color">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Clientes</h5>
+                                <p>Registra clientes frecuentes para ofrecer atención personalizada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!--Elemento 6 del carrusel-->
+                        <a href="/docs/proveedores.html" target="_self">
+                            <img src="img/proveedor-banner.jpg" class="d-block w-100" id="c01" alt="img3">
+                        </a>
+
+                        <div class="carrusel-color">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Proveedores</h5>
+                                <p>Registra a un nuevo proveedor de mercancias y servicios</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><!--Boton para el elemento anrerior-->
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><!--Boton para el elemento siguiente-->
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div><!--Fin del carrusel de imagenes-->
+
+            <h1 style="padding-top: 10rem;padding-left: 6rem;">BIENVENIDO AL SISTEMA</h1>
+            <p style="padding-top: 1rem;">Empleado(a), te damos la bienvenida al nuevo sistema de control de inventarios de "MOBO original accesories®". Empieza a realizar los movimientos diarios mas importantes (ventas, compras, etc.)</p>
+            <p style="padding-top: 1rem;">Por favor, elija una opción para empezar para empezar a realizar movimientos:</p>
+
+            <div>
+                <ul class="mmenu">
+                    <li>
+                        <img src="img/ventas.png">
+                        <a style="padding-top:.5rem;" href="docs/ventas.html" title="Haz clic aquí">Registrar ventas</a>
+                    </li>
+                    <li>
+                        <img src="img/compras.png">
+                        <a style="padding-top:.5rem;" href="docs/compras.html" title="Haz clic aquí">Registrar compras</a>
+                    </li>
+                    <li>
+                        <img src="img/producto-icono.png">
+                        <a style="padding-top:.5rem;" href="docs/productos.html" title="Haz clic aquí">Registrar productos</a>
+                    </li>
+                    <li>
+                        <img src="img/linea.png">
+                        <a style="padding-top:.5rem;" href="docs/lineas.html" title="Haz clic aquí">Registrar lineas de productos</a>
+                    </li>
+                    <li>
+                        <img src="img/clientes.png">
+                        <a style="padding-top:.5rem;" href="docs/clientes.html" title="Haz clic aquí">Registar clientes </a>
+                    </li>
+                    <li>
+                        <img src="img/proveedor.png">
+                        <a style="padding-top:.5rem;" href="docs/proveedores.html" title="Haz clic aquí">Registrar proveedores</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="padding-top: 10rem;" align="right">
+                <a href="#inicio"title="Parte superior">
+                    <img src="/img/uparrow.png" height="60" width="60">
+                </a>
+            </div>
+
+        </main>
+
+        <footer class="fot">
+            <span style="letter-spacing: 5px;"><i>AppStar Division®, Mayo 2022</i></span>
+
+            <div class="profile">
+                <ul>
+                    MOBO original accesories®
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><img src="img/facebook-icon.png" width="25px" title="Facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter-icon.png" width="25px" title="Twitter">Twitter</a></li>
+                    <li><a href="https://discord.gg/8uMTNAGq" target="_blank"><img src="img/discord.png" width="25px" title="Discord">Discord</a></li>
+                </ul>
+            </div>
+
+            <img src="img/logo-appstar.png" style="width: 200px; float: right;padding-right: 4rem;padding-top:4rem;">
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!--Para llamar a Jquery-->
+        <script src="/javascript/detach_menu.js"></script><!--Para script de la barra de navegación-->
+    </body>
+
+</html>

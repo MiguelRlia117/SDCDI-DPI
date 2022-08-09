@@ -1,0 +1,83 @@
+/*Hoja de estilos para la barra de navegación del sitio web*/
+
+.navbar{                 /*Contenedor de la barra de navegación*/
+    position:absolute;
+    height:60px;
+    width:100%;
+    left: 0;
+    top: 0;
+}
+
+.navlink{                 /*Contenedor de los enlaces en la barra de navegación*/
+    display: inline;
+    position:relative; 
+    background-color: #F8F9FA;
+    color: black;
+    padding: 15px 70px;
+    width: 100%;
+    text-decoration: none ;
+}
+
+.navlink:hover{                
+    background-color:#097DCE;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight:bold;
+    transition: all 0.2s linear;
+}
+
+a#home.navlink:hover{                
+    text-transform: uppercase;
+    font-weight:bold;
+    transition: all 0.2s linear;
+    background-color:#ffbebc;
+    color:#097DCE;
+}
+
+.idmen{                 /*Para la aparición de menú despegable en panatallas mas pequeñas*/
+    display: none;
+    align-items: center;
+}
+
+.bar{
+    align-items: center;
+}
+
+div.navbar p::first-letter{
+    background-color:#097DCE;
+    color: #fff;
+}
+
+
+@media  only screen and (max-width:1344px) {    /*Media tag para cambiar el estilo de la barra en un tamaño de pantalla a partir de los 1344px*/
+
+    .navlink{                 /*Contenedor de los enlaces en la barra de navegación*/
+        display: block;
+        position:relative; 
+        background-color: #F8F9FA;
+        color: black;
+        padding: 15px 100px;
+        width: 100%;
+        text-decoration: none ;
+    }
+
+    .navbar div.bar{
+        width: 100%;
+        align-items:center;    
+    }
+
+    .navbar div.bar div{
+        display: none;    
+    }
+
+    .navbar div.bar div.show{
+        display:block;    
+    }
+
+    .idmen{                 /*Para la aparición de menú despegable en panatallas mas pequeñas*/
+        display: inline-block;
+        align-items: center;
+        cursor:pointer;
+    }
+
+}
